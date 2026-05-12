@@ -1,0 +1,286 @@
+.header {
+    background-color: #e7e7e7;
+    color: #020000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.logo {
+    width: fit-content;
+    height: 50px;
+    display: flex;
+    font-family: 'Calibri';
+    align-items: center;
+}
+
+.nav-bar {
+    height: 50px;
+    width: 40%;
+}
+
+.nav-bar > ul {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-family: 'Segoe UI';
+    flex-direction: row;
+    font-weight: 600;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.nav-bar > ul > li {
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+/* header styling ends----------------- */
+
+
+
+/* home styling begins----------------- */
+
+.home {
+  width: 80%;
+  height: 500px;
+  margin-left: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e7e7e7;
+}
+
+/* home styling ends----------------- */
+
+
+.about {
+  width: 80%;
+  height: 500px;
+  margin-left: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e7e7e7;
+}
+
+.container
+{
+    height: 100vh;
+    width: 100%;
+    color: white;
+    display: flex;
+    place-items: center;
+    row-gap: 15px;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #030101;
+}
+
+.form
+{
+    width: 25%;
+    /* padding: 10px; */
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 10px;
+    background-color: #030101;
+}
+
+.credInput
+{
+    text-indent: 15px;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    padding: 10px 0px;
+}
+
+.btn
+{
+    padding: 13px 25px;
+    border-radius: 6px;
+    border: 1px solid #40ffff;
+    background-color: #40ffff;
+    color: #030101;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover
+{
+    background-color: transparent;
+    color: #28d4d4;
+    border: 1px solid #28d4d4;
+    transition: 0.3s ease-in-out;
+}
+
+.verify
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    gap: 5px;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.verify > p
+{
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    font-weight: 500;
+}
+
+a
+{
+    text-decoration: none;
+    color: #40ffff;
+    font-weight: 500;
+}
+
+.error 
+{
+    width: 100%;
+    padding: 10px;
+    background-color: lightcoral;
+    color: red;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.invisible-msg
+{
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+}
+
+.success
+{
+    width: 100%;
+    padding: 10px;
+    background-color: lightgreen;
+    color: green;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.new{
+    width: 80%;
+    height: 500px;
+    margin-left: 10%;
+    display: flex;
+    color: azure;
+    justify-content: center;
+    align-items: center;
+    background-color: #020000;
+}
+
+
+/* css for search button */
+
+.search-box     
+{
+    padding: 10px;
+    background-color: #020000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.search
+{
+    padding: 8px 25px;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.hidden
+{
+    display: none;
+    padding: 0px;
+}
+
+.visible
+{   
+    margin-top: 40px;
+    padding: 10px;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    gap: 5px;
+    width: 40%;
+    color: white;
+    background-color: #bdbdbd;   
+    opacity: 0.95;
+}
+
+.visible > p:hover
+{
+    /* padding: 5px; */
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #878282;
+}
+
+/* css for result for food from search */
+
+.food-result-box
+{
+    background-color: blue;
+    padding: 10px;
+    width: 40%;
+    color: white;
+    /* position: relative; */
+}
+
+.image-container
+{
+    height: 200px;
+    width: 90%;
+    background-color: yellow;
+}
+
+.food-details
+{
+    padding: 10px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: green;
+}
+
+.food-details > p
+{
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: white;
+}
+
+
+@media screen and (max-width: 480px) {
+    
+    .container
+    {
+        height: 100vh;
+        width: 100%;
+        /* background-color: white; */
+    }
+
+    .form {
+        width: 90%;
+    }
+}
+
