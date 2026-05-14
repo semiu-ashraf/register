@@ -31,7 +31,7 @@ function Login()
 
         event.preventDefault()
 
-        fetch("http://localhost:8000/login",{
+        fetch("https://nutrition-api-9cta.onrender.com/login",{
             method:"POST",
             headers:{
                 "content-type":"application/json"

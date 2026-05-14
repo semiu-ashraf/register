@@ -17,7 +17,7 @@ export default function Track() {
 
         let value = event.target.value;
         
-        fetch("http://localhost:8000/foods/"+value,{
+        fetch("https://nutrition-api-9cta.onrender.com/foods/"+value,{
             method:"GET",
             headers:{
                 "Authorization":`Bearer ${LoggedIn.userLogged.token}`
