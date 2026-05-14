@@ -1,8 +1,9 @@
 import { useState } from "react"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 function Register()
 {
+    const navigate = useNavigate()
 
     let [usercreds, setUsercreds] = useState({
         name:'',
@@ -37,10 +38,18 @@ function Register()
             body:JSON.stringify(usercreds)
         })
         .then((response)=>{
-            setMessage({
-                type:"success",
-                text:"User registered successful"
-            })
+            if(response.status!==404){
+                setMessage({
+                    type:"success",
+                    text:"User registered successful"
+                })
+            }
+            else{
+                setMessage({
+                    type:"error",
+                    text:"User already exists"
+                })
+            }
             setTimeout(()=>{
                 setMessage({
                 type:"invisible-msg",
@@ -59,6 +68,7 @@ function Register()
         })
         .then((user)=>{
             console.log(user)
+            navigate("/login")
         })
         .catch((err)=>{
             console.log(err)
