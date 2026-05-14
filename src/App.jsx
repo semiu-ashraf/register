@@ -26,8 +26,8 @@ function App()
         <Router>
           <Routes>
             <Route path='/' element={<Login/>}/>
-            <Route path='/login' element={<Login/>}/>
-            <Route path='/register' element={<Register/>}/>
+            <Route path='https://register-ashydevs.vercel.app/login' element={<Login/>}/>
+            <Route path='https://register-ashydevs.vercel.app/register' element={<Register/>}/>
             <Route path='*' element={<Login/>}/>
             <Route path='/new' element={<Private element={New}/>} />
             <Route path='/track' element={<Private element={Track}/>} />           
